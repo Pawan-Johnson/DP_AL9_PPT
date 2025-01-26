@@ -1,0 +1,72 @@
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm,algorithmic,algorithm}
+\usepackage{caption} % Required for specifying captions to tables and figures
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.callouts}
+
+\usepackage{geometry}
+\usepackage{subfigure, subcaption}
+\usepackage[append]{beamersubframe}
+% \usepackage{listings}
+% \usepackage{minted}
+% \usepackage{appendixify}
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=false,% hyperlinks will be black
+  urlbordercolor = black,
+  % linkbordercolor=red,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+\captionsetup{font=tiny,labelfont=bf,skip=0pt}
+\usepackage{booktabs}
+\usetheme{CERN}
+
+% \beamertemplategridbackground[1cm]
+\setbeamersize
+{
+    text margin left=1cm,
+    text margin right=1cm
+}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=false,rounded=false]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+
+\title{Alma $9$ Validation}
+\subtitle{Dark Photon Samples}
+\author{Pawan Johnson}
+\institute{University of Liverpool}
+\date{\today}
+
+
+\begin{document}
+
+\begingroup
+\setbeamertemplate{footline}{}
+\begin{frame}
+    \maketitle
+\end{frame}
+\endgroup
+
+\include{chapters/intro}
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+
+\section{Backup}
+\appendix
+\appendsubframes
+
+\end{document}

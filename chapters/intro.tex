@@ -1,0 +1,44 @@
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item Validate Alma9 version of Calypso for the track variables
+        \item For the Dark-Photon Samples
+        \item Specifically to understand the difference in two track reconstruction when they are close by
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Data Description}
+    \begin{itemize}
+        \item We want to look at Dark Photon decays to two tracks.
+        \item Data samples used are \href{/eos/experiment/faser/data0/sim/mc24/foresee/1100*/phy/}{/eos/experiment/faser/data0/sim/mc24/foresee/1100\{33,38,51\}/}
+        \vspace{-0.25cm}\begin{itemize}
+            \item 110033 : Mass = 10  MeV, epsilon = 1E-5 
+            \item 110038 : Mass = 100 MeV, epsilon = 1E-5 
+            \item 110051 : Mass = 10  MeV, epsilon = 1E-4 
+        \end{itemize}
+        \item ALMA 9 samples : \href{./phy/s0008-dev/}{./phy/s0008-dev/} 
+        \item CENTOS 7 samples: \href{./phy/s0008-r0019/}{./phy/s0008-r0019/}
+        \item Chaning them together gives a total of 60k events.
+        \item {\color{red}{Justification for chaining given diff mass/couplings?}}
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Overview of Validation }
+    \begin{itemize}
+        \item Begin with a sanity check by looking at the TrackParameters
+        \begin{itemize}
+            \item longTracks
+            \item Track Chi2 / Track Chi2/DoF
+            \item Track nDoF
+            \item Track Charge
+            \item \ldots
+        \end{itemize}
+        \item Quantify separation between tracks
+        \item Compare track reconstruction as a function of above
+        \item Definition of Efficiency?
+        \item Residues? 
+
+        
+    \end{itemize}
+
+\end{frame}
