@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.1.6)  26 JAN 2025 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.1.6)  27 JAN 2025 00:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,25 +639,58 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count351
+\calc@Bcount=\count352
+\calc@Adimen=\dimen315
+\calc@Bdimen=\dimen316
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count353
+\calc@Cskip=\skip69
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen317
+\ESO@tempdimb=\dimen318
+)
+\AM@pagewidth=\dimen319
+\AM@pageheight=\dimen320
+\AM@fboxrule=\dimen321
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count354
+\AM@pagebox=\box83
+\AM@global@opts=\toks50
+\AM@pagecnt=\count355
+\AM@toc@title=\toks51
+\AM@lof@heading=\toks52
+\c@AM@survey=\count356
+\AM@templatesizebox=\box84
+) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip67
-\subfigcapskip=\skip68
-\subfigcaptopadj=\dimen315
-\subfigbottomskip=\skip69
-\subfigcapmargin=\dimen316
-\subfiglabelskip=\skip70
-\c@subfigure=\count351
-\c@lofdepth=\count352
-\c@subtable=\count353
-\c@lotdepth=\count354
+\subfigtopskip=\skip70
+\subfigcapskip=\skip71
+\subfigcaptopadj=\dimen322
+\subfigbottomskip=\skip72
+\subfigcapmargin=\dimen323
+\subfiglabelskip=\skip73
+\c@subfigure=\count357
+\c@lofdepth=\count358
+\c@subtable=\count359
+\c@lotdepth=\count360
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip71
-\subfig@bottom=\skip72
+\subfig@top=\skip74
+\subfig@bottom=\skip75
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
 LaTeX Info: Redefining \subref on input line 191.
@@ -667,75 +700,72 @@ Package subcaption Info: The counter `subtable' was already defined by
 (subcaption)             an unknown document class or package on input line 239.
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamersubframe/beamersubframe.sty
 Package: beamersubframe 2011/08/07 v0.2 reordering beamer frames
-\bsf@frame@param=\toks50
+\bsf@frame@param=\toks53
 \bsf@sfrout=\write5
  (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks51
-\verbatim@line=\toks52
+\every@verbatim=\toks54
+\verbatim@line=\toks55
 \verbatim@in@stream=\read3
 ))
-Package hyperref Info: Option `colorlinks' set `false' on input line 20.
+Package hyperref Info: Option `colorlinks' set `false' on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen317
-\lightrulewidth=\dimen318
-\cmidrulewidth=\dimen319
-\belowrulesep=\dimen320
-\belowbottomsep=\dimen321
-\aboverulesep=\dimen322
-\abovetopsep=\dimen323
-\cmidrulesep=\dimen324
-\cmidrulekern=\dimen325
-\defaultaddspace=\dimen326
-\@cmidla=\count355
-\@cmidlb=\count356
-\@aboverulesep=\dimen327
-\@belowrulesep=\dimen328
-\@thisruleclass=\count357
-\@lastruleclass=\count358
-\@thisrulewidth=\dimen329
+\heavyrulewidth=\dimen324
+\lightrulewidth=\dimen325
+\cmidrulewidth=\dimen326
+\belowrulesep=\dimen327
+\belowbottomsep=\dimen328
+\aboverulesep=\dimen329
+\abovetopsep=\dimen330
+\cmidrulesep=\dimen331
+\cmidrulekern=\dimen332
+\defaultaddspace=\dimen333
+\@cmidla=\count361
+\@cmidlb=\count362
+\@aboverulesep=\dimen334
+\@belowrulesep=\dimen335
+\@thisruleclass=\count363
+\@lastruleclass=\count364
+\@thisrulewidth=\dimen336
 ) (./beamerthemeCERN.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (./beamerfontthemeCERN.sty) (./beamercolorthemeCERN.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty)))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count359
-\l__pdf_internal_box=\box83
+\l__color_backend_stack_int=\count365
+\l__pdf_internal_box=\box85
 ) (./main.aux (./chapters/intro.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux
-
-LaTeX Warning: Label `table:truth_efficiency' multiply defined.
-
 
 LaTeX Warning: Label `table:truth_efficiency' multiply defined.
 
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -773,77 +803,77 @@ LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count360
-\scratchdimen=\dimen330
-\scratchbox=\box84
-\nofMPsegments=\count361
-\nofMParguments=\count362
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count363
-\MPscratchDim=\dimen331
-\MPnumerator=\count364
-\makeMPintoPDFobject=\count365
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count366
+\scratchdimen=\dimen337
+\scratchbox=\box86
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen338
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 53.
+Package hyperref Info: Link coloring OFF on input line 54.
  (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 53.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 53.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 53.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 53.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 53.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 53.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 53.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 53.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 53.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 54.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 53.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 53.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 53.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -860,28 +890,36 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./main.sfp)
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (./main.sfp)
 \openout5 = `main.sfr'.
 
  (./main.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 53.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-Overfull \hbox (1.48033pt too wide) detected at line 59
+Overfull \hbox (1.48033pt too wide) detected at line 60
  [] 
  []
 
 
-Overfull \vbox (5.02582pt too high) detected at line 59
+Overfull \vbox (5.02582pt too high) detected at line 60
  []
 
 [1
@@ -893,16 +931,16 @@ Overfull \vbox (5.02582pt too high) detected at line 59
 
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 24.
-LaTeX Font Info:    No file OMScmss.fd. on input line 24.
+LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 26.
+LaTeX Font Info:    No file OMScmss.fd. on input line 26.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 24.
+(Font)              for symbol `textbraceleft' on input line 26.
 
 
-Overfull \hbox (18.59474pt too wide) in paragraph at lines 24--24
+Overfull \hbox (18.59474pt too wide) in paragraph at lines 26--26
 []\OT1/cmss/m/n/10.95 /eos/experiment/faser/data0/sim/mc24/foresee/1100\OMS/cmss/m/n/10.95 f\OT1/cmss/m/n/10.95 33,38,51\OMS/cmss/m/n/10.95 g\OT1/cmss/m/n/10.95 /[] 
  []
 
@@ -919,125 +957,91 @@ Overfull \hbox (18.59474pt too wide) in paragraph at lines 24--24
 
 
 ]
-<output/longTracks.pdf, id=57, 569.12625pt x 408.52625pt>
+<output/longTracks.pdf, id=61, 569.12625pt x 408.52625pt>
 File: output/longTracks.pdf Graphic file (type pdf)
 <use output/longTracks.pdf>
-Package pdftex.def Info: output/longTracks.pdf  used on input line 20.
-(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
-
-Overfull \vbox (2.64003pt too high) detected at line 20
- []
-
-[6
+Package pdftex.def Info: output/longTracks.pdf  used on input line 26.
+(pdftex.def)             Requested size: 245.83282pt x 176.46075pt.
+ [6
 
  <./output/longTracks.pdf, page is rotated 90 degrees>]
-File: output/longTracks.pdf Graphic file (type pdf)
-<use output/longTracks.pdf>
-Package pdftex.def Info: output/longTracks.pdf  used on input line 29.
-(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
-
-Overfull \hbox (7.29921pt too wide) in paragraph at lines 29--29
-[][]  
- []
-
-
-Overfull \vbox (1.93924pt too high) detected at line 29
- []
-
-[7
-
-]
-<output/Track_PropagationError.pdf, id=114, 569.12625pt x 408.52625pt>
+<output/Track_PropagationError.pdf, id=111, 569.12625pt x 408.52625pt>
 File: output/Track_PropagationError.pdf Graphic file (type pdf)
 <use output/Track_PropagationError.pdf>
-Package pdftex.def Info: output/Track_PropagationError.pdf  used on input line 35.
+Package pdftex.def Info: output/Track_PropagationError.pdf  used on input line 44.
+(pdftex.def)             Requested size: 276.559pt x 198.52771pt.
+ [7
+
+ <./output/Track_PropagationError.pdf, page is rotated 90 degrees>]
+<./output/Track_Chi2.pdf, id=162, 569.12625pt x 408.52625pt>
+File: ./output/Track_Chi2.pdf Graphic file (type pdf)
+<use ./output/Track_Chi2.pdf>
+Package pdftex.def Info: ./output/Track_Chi2.pdf  used on input line 50.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (2.64003pt too high) detected at line 35
+Overfull \vbox (2.64003pt too high) detected at line 50
  []
 
 [8
 
- <./output/Track_PropagationError.pdf, page is rotated 90 degrees>]
-<./output/Track_Chi2.pdf, id=164, 569.12625pt x 408.52625pt>
-File: ./output/Track_Chi2.pdf Graphic file (type pdf)
-<use ./output/Track_Chi2.pdf>
-Package pdftex.def Info: ./output/Track_Chi2.pdf  used on input line 41.
-(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
-
-Overfull \vbox (2.64003pt too high) detected at line 41
- []
-
-[9
-
  <./output/Track_Chi2.pdf, page is rotated 90 degrees>]
-<./output/Track_Chi2perDoF.pdf, id=215, 569.12625pt x 408.52625pt>
+<./output/Track_Chi2perDoF.pdf, id=213, 569.12625pt x 408.52625pt>
 File: ./output/Track_Chi2perDoF.pdf Graphic file (type pdf)
 <use ./output/Track_Chi2perDoF.pdf>
-Package pdftex.def Info: ./output/Track_Chi2perDoF.pdf  used on input line 47.
+Package pdftex.def Info: ./output/Track_Chi2perDoF.pdf  used on input line 61.
+(pdftex.def)             Requested size: 276.559pt x 198.52771pt.
+ [9
+
+ <./output/Track_Chi2perDoF.pdf, page is rotated 90 degrees>]
+<./output/Track_nDoF.pdf, id=263, 569.12625pt x 408.52625pt>
+File: ./output/Track_nDoF.pdf Graphic file (type pdf)
+<use ./output/Track_nDoF.pdf>
+Package pdftex.def Info: ./output/Track_nDoF.pdf  used on input line 71.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (2.64003pt too high) detected at line 47
+Overfull \vbox (0.87509pt too high) detected at line 71
  []
 
 [10
 
- <./output/Track_Chi2perDoF.pdf, page is rotated 90 degrees>]
-<./output/Track_nDoF.pdf, id=265, 569.12625pt x 408.52625pt>
-File: ./output/Track_nDoF.pdf Graphic file (type pdf)
-<use ./output/Track_nDoF.pdf>
-Package pdftex.def Info: ./output/Track_nDoF.pdf  used on input line 53.
+ <./output/Track_nDoF.pdf, page is rotated 90 degrees>]
+<./output/Track_charge.pdf, id=313, 569.12625pt x 408.52625pt>
+File: ./output/Track_charge.pdf Graphic file (type pdf)
+<use ./output/Track_charge.pdf>
+Package pdftex.def Info: ./output/Track_charge.pdf  used on input line 81.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (2.64003pt too high) detected at line 53
+Overfull \vbox (0.87509pt too high) detected at line 81
  []
 
 [11
 
- <./output/Track_nDoF.pdf, page is rotated 90 degrees>]
-<./output/Track_charge.pdf, id=315, 569.12625pt x 408.52625pt>
-File: ./output/Track_charge.pdf Graphic file (type pdf)
-<use ./output/Track_charge.pdf>
-Package pdftex.def Info: ./output/Track_charge.pdf  used on input line 59.
-(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
-
-Overfull \vbox (2.64003pt too high) detected at line 59
- []
-
-[12
-
  <./output/Track_charge.pdf, page is rotated 90 degrees>]
-<./output/Track_nLayers.pdf, id=365, 569.12625pt x 408.52625pt>
+<./output/Track_nLayers.pdf, id=363, 569.12625pt x 408.52625pt>
 File: ./output/Track_nLayers.pdf Graphic file (type pdf)
 <use ./output/Track_nLayers.pdf>
-Package pdftex.def Info: ./output/Track_nLayers.pdf  used on input line 65.
-(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
+Package pdftex.def Info: ./output/Track_nLayers.pdf  used on input line 91.
+(pdftex.def)             Requested size: 291.92444pt x 209.55495pt.
+ [12
 
-Overfull \vbox (2.64003pt too high) detected at line 65
- []
-
-[13
-
- <./output/Track_nLayers.pdf, page is rotated 90 degrees>] [14
-
-])
+ <./output/Track_nLayers.pdf, page is rotated 90 degrees>])
 \openout2 = `chapters/chapter2.aux'.
 
- (./chapters/chapter2.tex [15
+ (./chapters/chapter2.tex [13
 
 
 
+
+] [14
+
+] [15
 
 ] [16
 
 ] [17
 
-] [18
-
-] [19
-
 ]
-<./output/DeltaR0.pdf, id=459, 569.12625pt x 408.52625pt>
+<./output/DeltaR0.pdf, id=450, 569.12625pt x 408.52625pt>
 File: ./output/DeltaR0.pdf Graphic file (type pdf)
 <use ./output/DeltaR0.pdf>
 Package pdftex.def Info: ./output/DeltaR0.pdf  used on input line 170.
@@ -1046,10 +1050,10 @@ Package pdftex.def Info: ./output/DeltaR0.pdf  used on input line 170.
 Overfull \vbox (2.64003pt too high) detected at line 170
  []
 
-[20
+[18
 
  <./output/DeltaR0.pdf, page is rotated 90 degrees>]
-<./output/DeltaX0.pdf, id=509, 569.12625pt x 408.52625pt>
+<./output/DeltaX0.pdf, id=500, 569.12625pt x 408.52625pt>
 File: ./output/DeltaX0.pdf Graphic file (type pdf)
 <use ./output/DeltaX0.pdf>
 Package pdftex.def Info: ./output/DeltaX0.pdf  used on input line 176.
@@ -1058,10 +1062,10 @@ Package pdftex.def Info: ./output/DeltaX0.pdf  used on input line 176.
 Overfull \vbox (2.64003pt too high) detected at line 176
  []
 
-[21
+[19
 
  <./output/DeltaX0.pdf, page is rotated 90 degrees>]
-<./output/DeltaY0.pdf, id=559, 569.12625pt x 408.52625pt>
+<./output/DeltaY0.pdf, id=551, 569.12625pt x 408.52625pt>
 File: ./output/DeltaY0.pdf Graphic file (type pdf)
 <use ./output/DeltaY0.pdf>
 Package pdftex.def Info: ./output/DeltaY0.pdf  used on input line 182.
@@ -1070,12 +1074,12 @@ Package pdftex.def Info: ./output/DeltaY0.pdf  used on input line 182.
 Overfull \vbox (2.64003pt too high) detected at line 182
  []
 
-[22
+[20
 
- <./output/DeltaY0.pdf, page is rotated 90 degrees>] [23
+ <./output/DeltaY0.pdf, page is rotated 90 degrees>] [21
 
 ]
-<./assets/OverlayTracks.png, id=616, 2003.485pt x 1979.395pt>
+<./assets/OverlayTracks.png, id=607, 2003.485pt x 1979.395pt>
 File: ./assets/OverlayTracks.png Graphic file (type png)
 <use ./assets/OverlayTracks.png>
 Package pdftex.def Info: ./assets/OverlayTracks.png  used on input line 207.
@@ -1084,10 +1088,10 @@ Package pdftex.def Info: ./assets/OverlayTracks.png  used on input line 207.
 Overfull \vbox (8.5606pt too high) detected at line 207
  []
 
-[24
+[22
 
  <./assets/OverlayTracks.png>]
-<output/Theta0.pdf, id=627, 569.12625pt x 408.52625pt>
+<output/Theta0.pdf, id=618, 569.12625pt x 408.52625pt>
 File: output/Theta0.pdf Graphic file (type pdf)
 <use output/Theta0.pdf>
 Package pdftex.def Info: output/Theta0.pdf  used on input line 213.
@@ -1096,10 +1100,10 @@ Package pdftex.def Info: output/Theta0.pdf  used on input line 213.
 Overfull \vbox (2.64003pt too high) detected at line 213
  []
 
-[25
+[23
 
  <./output/Theta0.pdf, page is rotated 90 degrees>]
-<output/DeltaRP.pdf, id=678, 569.12625pt x 408.52625pt>
+<output/DeltaRP.pdf, id=669, 569.12625pt x 408.52625pt>
 File: output/DeltaRP.pdf Graphic file (type pdf)
 <use output/DeltaRP.pdf>
 Package pdftex.def Info: output/DeltaRP.pdf  used on input line 219.
@@ -1108,178 +1112,318 @@ Package pdftex.def Info: output/DeltaRP.pdf  used on input line 219.
 Overfull \vbox (2.64003pt too high) detected at line 219
  []
 
-[26
+[24
 
- <./output/DeltaRP.pdf, page is rotated 90 degrees>] [27
+ <./output/DeltaRP.pdf, page is rotated 90 degrees>] [25
 
 ])
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
-<./output/Effi_DeltaR0_all.pdf, id=734, 569.12625pt x 408.52625pt>
-File: ./output/Effi_DeltaR0_all.pdf Graphic file (type pdf)
-<use ./output/Effi_DeltaR0_all.pdf>
-Package pdftex.def Info: ./output/Effi_DeltaR0_all.pdf  used on input line 5.
+<./output/DeltaR0_all.pdf, id=726, 569.12625pt x 408.52625pt>
+File: ./output/DeltaR0_all.pdf Graphic file (type pdf)
+<use ./output/DeltaR0_all.pdf>
+Package pdftex.def Info: ./output/DeltaR0_all.pdf  used on input line 5.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 5
  []
 
-[28
+[26
 
 
 
 
- <./output/Effi_DeltaR0_all.pdf, page is rotated 90 degrees>]
-<./output/Effi_DeltaY0_all.pdf, id=784, 569.12625pt x 408.52625pt>
-File: ./output/Effi_DeltaY0_all.pdf Graphic file (type pdf)
-<use ./output/Effi_DeltaY0_all.pdf>
-Package pdftex.def Info: ./output/Effi_DeltaY0_all.pdf  used on input line 11.
+ <./output/DeltaR0_all.pdf, page is rotated 90 degrees>]
+<./output/DeltaY0_all.pdf, id=776, 569.12625pt x 408.52625pt>
+File: ./output/DeltaY0_all.pdf Graphic file (type pdf)
+<use ./output/DeltaY0_all.pdf>
+Package pdftex.def Info: ./output/DeltaY0_all.pdf  used on input line 11.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 11
  []
 
-[29
+[27
 
- <./output/Effi_DeltaY0_all.pdf, page is rotated 90 degrees>]
-<./output/Effi_DeltaX0_all.pdf, id=835, 569.12625pt x 408.52625pt>
-File: ./output/Effi_DeltaX0_all.pdf Graphic file (type pdf)
-<use ./output/Effi_DeltaX0_all.pdf>
-Package pdftex.def Info: ./output/Effi_DeltaX0_all.pdf  used on input line 17.
+ <./output/DeltaY0_all.pdf, page is rotated 90 degrees>]
+<./output/DeltaX0_all.pdf, id=826, 569.12625pt x 408.52625pt>
+File: ./output/DeltaX0_all.pdf Graphic file (type pdf)
+<use ./output/DeltaX0_all.pdf>
+Package pdftex.def Info: ./output/DeltaX0_all.pdf  used on input line 17.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 17
  []
 
-[30
+[28
 
- <./output/Effi_DeltaX0_all.pdf, page is rotated 90 degrees>]
-<./output/Effi_Theta0_all.pdf, id=885, 569.12625pt x 408.52625pt>
-File: ./output/Effi_Theta0_all.pdf Graphic file (type pdf)
-<use ./output/Effi_Theta0_all.pdf>
-Package pdftex.def Info: ./output/Effi_Theta0_all.pdf  used on input line 23.
+ <./output/DeltaX0_all.pdf, page is rotated 90 degrees>]
+<./output/Theta0_all.pdf, id=877, 569.12625pt x 408.52625pt>
+File: ./output/Theta0_all.pdf Graphic file (type pdf)
+<use ./output/Theta0_all.pdf>
+Package pdftex.def Info: ./output/Theta0_all.pdf  used on input line 23.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 23
  []
 
-[31
+[29
 
- <./output/Effi_Theta0_all.pdf, page is rotated 90 degrees>]
-<./output/Effi_DeltaRP_all.pdf, id=936, 569.12625pt x 408.52625pt>
-File: ./output/Effi_DeltaRP_all.pdf Graphic file (type pdf)
-<use ./output/Effi_DeltaRP_all.pdf>
-Package pdftex.def Info: ./output/Effi_DeltaRP_all.pdf  used on input line 35.
+ <./output/Theta0_all.pdf, page is rotated 90 degrees>]
+<./output/DeltaRP_all.pdf, id=927, 569.12625pt x 408.52625pt>
+File: ./output/DeltaRP_all.pdf Graphic file (type pdf)
+<use ./output/DeltaRP_all.pdf>
+Package pdftex.def Info: ./output/DeltaRP_all.pdf  used on input line 35.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 35
  []
 
-[32
+[30
 
- <./output/Effi_DeltaRP_all.pdf, page is rotated 90 degrees>] [33
+ <./output/DeltaRP_all.pdf, page is rotated 90 degrees>] [31
 
 ])
 \openout2 = `chapters/chapter4.aux'.
 
- (./chapters/chapter4.tex [34
+ (./chapters/chapter4.tex [32
 
 
 
 
-] [35
+] [33
+
+] [34
+
+]
+Overfull \hbox (17.63232pt too wide) in paragraph at lines 98--98
+ [] 
+ []
+
+[35
 
 ] [36
 
-] [37
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{table:truth_efficiency}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.106 \end{frame}
-                 ]
-<./output/DeltaR0_greq2.pdf, id=1021, 569.12625pt x 408.52625pt>
-File: ./output/DeltaR0_greq2.pdf Graphic file (type pdf)
-<use ./output/DeltaR0_greq2.pdf>
-Package pdftex.def Info: ./output/DeltaR0_greq2.pdf  used on input line 112.
+]
+<./output/Effi_greq2_DeltaR0.pdf, id=1017, 569.12625pt x 408.52625pt>
+File: ./output/Effi_greq2_DeltaR0.pdf Graphic file (type pdf)
+<use ./output/Effi_greq2_DeltaR0.pdf>
+Package pdftex.def Info: ./output/Effi_greq2_DeltaR0.pdf  used on input line 112.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
 Overfull \vbox (2.64003pt too high) detected at line 112
  []
 
-[38
+[37
 
- <./output/DeltaR0_greq2.pdf, page is rotated 90 degrees>]
-<./output/DeltaX0_greq2.pdf, id=1071, 569.12625pt x 408.52625pt>
-File: ./output/DeltaX0_greq2.pdf Graphic file (type pdf)
-<use ./output/DeltaX0_greq2.pdf>
-Package pdftex.def Info: ./output/DeltaX0_greq2.pdf  used on input line 117.
+ <./output/Effi_greq2_DeltaR0.pdf, page is rotated 90 degrees>]
+<./output/Effi_greq2_DeltaX0.pdf, id=1069, 569.12625pt x 408.52625pt>
+File: ./output/Effi_greq2_DeltaX0.pdf Graphic file (type pdf)
+<use ./output/Effi_greq2_DeltaX0.pdf>
+Package pdftex.def Info: ./output/Effi_greq2_DeltaX0.pdf  used on input line 118.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (24.64003pt too high) detected at line 117
+Overfull \vbox (24.64003pt too high) detected at line 118
+ []
+
+[38
+
+ <./output/Effi_greq2_DeltaX0.pdf, page is rotated 90 degrees>]
+<./output/Effi_greq2_DeltaY0.pdf, id=1119, 569.12625pt x 408.52625pt>
+File: ./output/Effi_greq2_DeltaY0.pdf Graphic file (type pdf)
+<use ./output/Effi_greq2_DeltaY0.pdf>
+Package pdftex.def Info: ./output/Effi_greq2_DeltaY0.pdf  used on input line 123.
+(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
+
+Overfull \vbox (24.64003pt too high) detected at line 123
  []
 
 [39
 
- <./output/DeltaX0_greq2.pdf, page is rotated 90 degrees>]
-<./output/DeltaY0_greq2.pdf, id=1121, 569.12625pt x 408.52625pt>
-File: ./output/DeltaY0_greq2.pdf Graphic file (type pdf)
-<use ./output/DeltaY0_greq2.pdf>
-Package pdftex.def Info: ./output/DeltaY0_greq2.pdf  used on input line 122.
+ <./output/Effi_greq2_DeltaY0.pdf, page is rotated 90 degrees>]
+<./output/Effi_greq2_Theta0.pdf, id=1169, 569.12625pt x 408.52625pt>
+File: ./output/Effi_greq2_Theta0.pdf Graphic file (type pdf)
+<use ./output/Effi_greq2_Theta0.pdf>
+Package pdftex.def Info: ./output/Effi_greq2_Theta0.pdf  used on input line 128.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (24.64003pt too high) detected at line 122
+Overfull \vbox (2.64003pt too high) detected at line 128
  []
 
 [40
 
- <./output/DeltaY0_greq2.pdf, page is rotated 90 degrees>]
-<./output/Theta0_greq2.pdf, id=1171, 569.12625pt x 408.52625pt>
-File: ./output/Theta0_greq2.pdf Graphic file (type pdf)
-<use ./output/Theta0_greq2.pdf>
-Package pdftex.def Info: ./output/Theta0_greq2.pdf  used on input line 127.
+ <./output/Effi_greq2_Theta0.pdf, page is rotated 90 degrees>]
+<./output/Effi_greq2_DeltaRP.pdf, id=1219, 569.12625pt x 408.52625pt>
+File: ./output/Effi_greq2_DeltaRP.pdf Graphic file (type pdf)
+<use ./output/Effi_greq2_DeltaRP.pdf>
+Package pdftex.def Info: ./output/Effi_greq2_DeltaRP.pdf  used on input line 133.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (2.64003pt too high) detected at line 127
+Overfull \vbox (2.64003pt too high) detected at line 133
  []
 
 [41
 
- <./output/Theta0_greq2.pdf, page is rotated 90 degrees>]
-<./output/DeltaRP_greq2.pdf, id=1221, 569.12625pt x 408.52625pt>
-File: ./output/DeltaRP_greq2.pdf Graphic file (type pdf)
-<use ./output/DeltaRP_greq2.pdf>
-Package pdftex.def Info: ./output/DeltaRP_greq2.pdf  used on input line 132.
+ <./output/Effi_greq2_DeltaRP.pdf, page is rotated 90 degrees>] [42
+
+] [43
+
+]
+<./output/Effi_eq2_DeltaR0.pdf, id=1283, 569.12625pt x 408.52625pt>
+File: ./output/Effi_eq2_DeltaR0.pdf Graphic file (type pdf)
+<use ./output/Effi_eq2_DeltaR0.pdf>
+Package pdftex.def Info: ./output/Effi_eq2_DeltaR0.pdf  used on input line 155.
 (pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-Overfull \vbox (2.64003pt too high) detected at line 132
+Overfull \vbox (2.64003pt too high) detected at line 155
  []
 
-[42
+[44
 
- <./output/DeltaRP_greq2.pdf, page is rotated 90 degrees>] [43
+ <./output/Effi_eq2_DeltaR0.pdf, page is rotated 90 degrees>]
+<./output/Effi_eq2_DeltaX0.pdf, id=1333, 569.12625pt x 408.52625pt>
+File: ./output/Effi_eq2_DeltaX0.pdf Graphic file (type pdf)
+<use ./output/Effi_eq2_DeltaX0.pdf>
+Package pdftex.def Info: ./output/Effi_eq2_DeltaX0.pdf  used on input line 161.
+(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
 
-] [44
+Overfull \vbox (2.64003pt too high) detected at line 161
+ []
+
+[45
+
+ <./output/Effi_eq2_DeltaX0.pdf, page is rotated 90 degrees>]
+<./output/Effi_eq2_DeltaY0.pdf, id=1383, 569.12625pt x 408.52625pt>
+File: ./output/Effi_eq2_DeltaY0.pdf Graphic file (type pdf)
+<use ./output/Effi_eq2_DeltaY0.pdf>
+Package pdftex.def Info: ./output/Effi_eq2_DeltaY0.pdf  used on input line 166.
+(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
+
+Overfull \vbox (2.64003pt too high) detected at line 166
+ []
+
+[46
+
+ <./output/Effi_eq2_DeltaY0.pdf, page is rotated 90 degrees>]
+<./output/Effi_eq2_Theta0.pdf, id=1433, 569.12625pt x 408.52625pt>
+File: ./output/Effi_eq2_Theta0.pdf Graphic file (type pdf)
+<use ./output/Effi_eq2_Theta0.pdf>
+Package pdftex.def Info: ./output/Effi_eq2_Theta0.pdf  used on input line 171.
+(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
+
+Overfull \vbox (2.64003pt too high) detected at line 171
+ []
+
+[47
+
+ <./output/Effi_eq2_Theta0.pdf, page is rotated 90 degrees>]
+<./output/Effi_eq2_DeltaRP.pdf, id=1484, 569.12625pt x 408.52625pt>
+File: ./output/Effi_eq2_DeltaRP.pdf Graphic file (type pdf)
+<use ./output/Effi_eq2_DeltaRP.pdf>
+Package pdftex.def Info: ./output/Effi_eq2_DeltaRP.pdf  used on input line 176.
+(pdftex.def)             Requested size: 307.28987pt x 220.58842pt.
+
+Overfull \vbox (2.64003pt too high) detected at line 176
+ []
+
+[48
+
+ <./output/Effi_eq2_DeltaRP.pdf, page is rotated 90 degrees>] [49
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{table:truth_efficiency}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174 \end{frame}
-                  [45
+l.211 \end{frame}
+                  [50
 
-] [46
+] [51
 
-]) [47
+]
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<assets/Alma9vsCentos7Efficiencies.pdf, id=1556, 963.6pt x 542.025pt>
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf  used on input line 215.
+(pdftex.def)             Requested size: 963.59766pt x 542.02367pt.
+
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf  used on input line 215.
+(pdftex.def)             Requested size: 963.59766pt x 542.02367pt.
+
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<assets/Alma9vsCentos7Efficiencies.pdf, id=1559, page=3, 963.6pt x 542.025pt>
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 3>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page3 used on input line 215.
+(pdftex.def)             Requested size: 963.59766pt x 542.02367pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 3>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page3 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 3>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page3 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 3>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page3 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 3>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page3 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+[52
+
+ <./assets/Alma9vsCentos7Efficiencies.pdf>]
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<assets/Alma9vsCentos7Efficiencies.pdf, id=1581, page=4, 963.6pt x 542.025pt>
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 4>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page4 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 4>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page4 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 4>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page4 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+[53 <./assets/Alma9vsCentos7Efficiencies.pdf>]
+
+pdfTeX warning: pdflatex (file ./assets/Alma9vsCentos7Efficiencies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<assets/Alma9vsCentos7Efficiencies.pdf, id=1588, page=5, 963.6pt x 542.025pt>
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 5>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page5 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 5>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page5 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+File: assets/Alma9vsCentos7Efficiencies.pdf Graphic file (type pdf)
+<use assets/Alma9vsCentos7Efficiencies.pdf, page 5>
+Package pdftex.def Info: assets/Alma9vsCentos7Efficiencies.pdf , page5 used on input line 215.
+(pdftex.def)             Requested size: 364.40741pt x 204.97916pt.
+[54 <./assets/Alma9vsCentos7Efficiencies.pdf>] [55]) [56
 
 
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 70.
+(hyperref)                removing `\translate ' on input line 71.
 
 (./main.sfr)
 \tf@nav=\write7
@@ -1302,21 +1446,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EE54681169351544D5D7E892FC8F738D;73.
+(rerunfilecheck)             Checksum: 25BCDF37DCC36C10DBE348D5661FE145;354.
  ) 
 Here is how much of TeX's memory you used:
- 28418 strings out of 476034
- 576219 string characters out of 5792865
- 1874388 words of memory out of 6000000
- 48129 multiletter control sequences out of 15000+600000
+ 29349 strings out of 476034
+ 594651 string characters out of 5792865
+ 1875388 words of memory out of 6000000
+ 49008 multiletter control sequences out of 15000+600000
  527919 words of font info for 88 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 128i,18n,122p,465b,782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,18n,122p,465b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (47 pages, 649239 bytes).
+Output written on main.pdf (56 pages, 788101 bytes).
 PDF statistics:
- 1382 PDF objects out of 1440 (max. 8388607)
- 719 compressed objects within 8 object streams
- 99 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1690 PDF objects out of 1728 (max. 8388607)
+ 878 compressed objects within 9 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

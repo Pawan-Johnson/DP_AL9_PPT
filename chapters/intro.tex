@@ -1,14 +1,16 @@
 \begin{frame}{Introduction}
     \begin{itemize}
-        \item Validate Alma9 version of Calypso for the track variables
-        \item For the Dark-Photon Samples
-        \item Specifically to understand the difference in two track reconstruction when they are close by
+        \item Validate ALMA9 version of Calypso for the track variables
+        \item Sinead already looked at single muon samples
+        \item Ansh looked at the A' analysis cutflow
+        % \item For the Dark-Photon Samples
+        \item We want to look at the ``two track reconstruction'' as a function of separation between them
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Data Description}
     \begin{itemize}
-        \item We want to look at Dark Photon decays to two tracks.
+        \item We will to look at Dark-Photon decays to electron pairs
         \item Data samples used are \href{/eos/experiment/faser/data0/sim/mc24/foresee/1100*/phy/}{/eos/experiment/faser/data0/sim/mc24/foresee/1100\{33,38,51\}/}
         \vspace{-0.25cm}\begin{itemize}
             \item 110033 : Mass = 10  MeV, epsilon = 1E-5 
@@ -17,25 +19,26 @@
         \end{itemize}
         \item ALMA 9 samples : \href{./phy/s0008-dev/}{./phy/s0008-dev/} 
         \item CENTOS 7 samples: \href{./phy/s0008-r0019/}{./phy/s0008-r0019/}
-        \item Chaning them together gives a total of 60k events.
-        \item {\color{red}{Justification for chaining given diff mass/couplings?}}
+        \item Chaining them together  for better statistics [total 60k events]
+        \item Can separate based on mass/couplings if interested
     \end{itemize}
     
 \end{frame}
 
 \begin{frame}{Overview of Validation }
+    \textbf{Objective: To Quantify two track reconstruction efficiency as a function of separation between the tracks}
     \begin{itemize}
-        \item Begin with a sanity check by looking at the TrackParameters
-        \begin{itemize}
-            \item longTracks
-            \item Track Chi2 / Track Chi2/DoF
-            \item Track nDoF
-            \item Track Charge
-            \item \ldots
-        \end{itemize}
+        % \item Begin with a sanity check by looking at the TrackParameters
+        % \begin{itemize}
+        %     \item longTracks
+        %     \item Track Chi2 / Track Chi2/DoF
+        %     \item Track nDoF
+        %     \item Track Charge
+        %     \item \ldots
+        % \end{itemize}
         \item Quantify separation between tracks
-        \item Compare track reconstruction as a function of above
-        \item Definition of Efficiency?
+        \item Compare generic track reconstruction as a function of above
+        \item Define an ``Efficiency'' and compare
         \item Residues? 
 
         
