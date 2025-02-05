@@ -4,13 +4,17 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{shapes.callouts}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{fit}
 
+% \usepackage{float}
 \usepackage{pdfpages}
 \usepackage{geometry}
-\usepackage{subfigure, subcaption}
+\usepackage{subcaption}
 \usepackage[append]{beamersubframe}
-% \usepackage{listings}
+\usepackage{listings}
 % \usepackage{minted}
+
 % \usepackage{appendixify}
 \usepackage{hyperref}
 \hypersetup{%
@@ -19,9 +23,10 @@
   % linkbordercolor=red,% hyperlink borders will be red
   pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
 }
-
-\captionsetup{font=tiny,labelfont=bf,skip=0pt}
+\captionsetup{font=tiny,labelfont=bf,skip=0pt, justification=centering}
 \usepackage{booktabs}
+\usepackage{multirow}
+
 \usetheme{CERN}
 
 % \beamertemplategridbackground[1cm]
@@ -60,11 +65,11 @@
 \end{frame}
 \endgroup
 
-\include{chapters/intro}
-\include{chapters/chapter1}
-\include{chapters/chapter2}
-\include{chapters/chapter3}
-\include{chapters/chapter4}
+\input{chapters/intro}
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
 
 \section{Backup}
 \appendix

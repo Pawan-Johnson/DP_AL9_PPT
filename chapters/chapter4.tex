@@ -1,226 +1,215 @@
-\begin{frame}{Definition of Efficiency Metrics}
-    \textbf{In General}
+\begin{frame}{Previous Efficiency Studies : Overlay}
+	\begin{figure}
+		\includegraphics[height=0.7 \textheight]{./assets/OverlayTracks.png}
+        \caption{ Overlay plot from \href{https://cds.cern.ch/record/2864686/plots}{Search for dark photons with the FASER detector at the LHC}\\ The separation variable used is the ``distance between the two tracks at their first measurements''}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Definition of Efficiency}
+    \textbf{General Idea}
 	\begin{itemize}
-        \item One Track Event $\implies$ NOT reconstructed
-        \item Two Track event + Opposite charges $\implies$ reconstructed 
-        \item More than two track $\implies$ complicated
+
+        \item One Track $\implies$ NOT reconstructed
+        \item Two Tracks with opposite charges $\implies$ Reconstructed 
+        \item More than two track $\implies$ Complicated
     \end{itemize}
     \vspace{1 cm}
-    \textbf{Some Possible Eff. Metrics}
+    \textbf{Potential Efficiency Metrics}
     \begin{itemize}
         \item Number of Events with $\geq$ 2 longTracks [good proxy]
-        \item (Can add charge identification to above but not necessary)
-        \item MC Based Effi. [matching reconstructed to truth level data]
+        \item MC Based Effi. [Using reconstructed-truth level data]
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Definition of Fiducial}
-    Before we define the efficiency we need to account for the detector acceptance by requiring the particle to be Fiducial.
+    Before we define the efficiency we must account for the detector acceptance by ensuring the particle to be Fiducial.
 
-		\textbf{Based on reconstructed data [Adapted from Sinead]}
+    \vspace{0.5cm}
+		% \textbf{Fiducial Criteria Based on Reconstructed Data}
+		% \begin{itemize}
+		% 	\item Requires $longTracks == 2$ 
+		% 	\item $Track\_r\_atMaxRadius < 100$
+		% 	\item $Track\_r\_at... < 100$
+ 		% \end{itemize}
+		\textbf{Fiducial Criteria Based on Truth-Level Data}
 		\begin{itemize}
-			\item Requires $longTracks == 2$ 
-			\item $Track\_r\_atMaxRadius < 100$
-			\item $t\_st\{1,2,3\}\_r < 100$
- 		\end{itemize}
-		\textbf{Based on truth level data }
-		\begin{itemize}
-			\item $truthd0\_r [\{1,2,3\}] < 100$
-			\item $truthd1\_r [\{1,2,3\}] < 100$
-			\item Does not need the 2track cut while maintaining that particles of interest were Fiducial, While also being independent of ALMA9 or CENTOS7
-	
+			\item truthd0\_r [\{1,2,3\}] $<$ 100
+			\item truthd1\_r [\{1,2,3\}] $<$ 100
+			\item truthd0\_pz $>$ 20 GeV
+			\item truthd1\_pz $>$ 20 GeV	
 		\end{itemize}
 
-        \textbf{Note:}
-        \begin{itemize}
-		\item Where are NaNs coming from at the truth-level?
-	    \end{itemize}	
+        \vspace{0.3cm}
+        {\small
+        A truth-level prescription is preferred because the reconstruction-based approach depends on reconstruction performance, whereas ``fiducial'' should ideally be a function of the detector alone.}
+
+        \vspace{0.2cm}
+
+        {\scriptsize
+            \textbf{Note:} truthd0\_r = $\sqrt{\text{truthd0\_x}^2 + \text{truthd0\_y}^2}$, and similarly for d1.
+
+            % The p\_z cut is to ensure the particles don't stray too far from the LOS?
+        }
 \end{frame}
 
-\begin{frame}{How do Fiducial Cuts perform?}
-    \begin{table}[h!]
-        \centering
-        \small
-        \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Selection Step} & \textbf{Pass} & \textbf{All} & \textbf{Effi. (\%)} & \textbf{Cum. Effi. (\%)} \\ \hline
-        2LongTracks              & 37807        & 60000       & 63.01                   & 63.01                              \\ \hline
-        Opposite Charge          & 32427        & 37807       & 85.77                   & 54.04                              \\ \hline
-        MaxRadius $<$ 100        & 31489    & 32427       & 97.11                   & 52.48                              \\ \hline
-        $t\_st1\_r < 100$        & 31471        & 31489       & 99.94                   & 52.45                              \\ \hline
-        $t\_st2\_r < 100$        & 31458        & 31471       & 99.96                   & 52.43                              \\ \hline
-        $t\_st3\_r < 100$        & 31383        & 31458       & 99.76                   & 52.31                              \\ \hline
+\begin{frame}{DarkPhoton Tracking CutFlow}
+\begin{table}[h]
+    \centering
+    \resizebox{\linewidth}{!}{ 
+        \begin{tabular}{lccccccccc}
+            \toprule
+            \multirow{2}{*}{Selection} & \multicolumn{4}{c}{ALMA9} & \multicolumn{4}{c}{CENTOS7} & \multirow{2}{*}{$\Delta$Eff.} \\
+            \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+            & Pass & All & Eff. & Cum. Eff.
+            & Pass & All & Eff. & Cum. Eff. \\
+            \midrule
+            $\geq$1 LongTracks & 56989 & 60000 & 94.98 & 94.98  & 56002 & 60000 & 93.34 & 93.34 & 1.64 \\
+            $\geq$2 LongTracks & 46416 & 56989 & 81.45 & 77.36  & 45210 & 56002 & 80.73 & 75.35 & 0.72 \\
+             =2 LongTracks & 37807 & 46416 & 81.45 & 63.01  & 36746 & 45210 & 81.28 & 61.24 & 0.17 \\
+             \textcolor{red}{\textbf{Opposite Charge}} & 32427 & 37807 & 85.77 & 54.04  & 30375 & 36746 & 82.66 & 50.62 & \textcolor{red}{\textbf{3.11}}\\
+            MaxRadius $<$ 100 & 31489 & 32427 & 97.11 & 52.48  & 29520 & 30375 & 97.19 & 49.20 & -0.08 \\
+            \midrule
+            \multicolumn{10}{c}{goodTrack Cuts}\\
+            \midrule
+            $\geq$ 7 Layers & 31435 & 31489 & 99.83  & 52.39  & 29472 & 29520 & 99.84  & 49.12 & -0.01 \\
+            \textcolor{red}{\textbf{$\chi^2$/DoF $<$ 25}} & 31121 & 31435 & 99.00  & 51.87  & 27710 & 29472 & 94.02  & 46.18& \textcolor{red}{\textbf{4.98}} \\
+            $\geq$ 7 DoF & 31115 & 31121 & 99.98  & 51.86    & 27706 & 27710 & 99.99  & 46.18 & -0.01\\
+            \bottomrule
         \end{tabular}
-        \caption{Efficiencies and cumulative efficiencies at various selection steps. [ALMA9]}
-        \label{table:efficiency}
-    \end{table}
-    \vspace{-0.5cm}
-    \begin{table}[h!]
-        \centering
-        \small
-        \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Selection Step} & \textbf{Pass} & \textbf{All} & \textbf{Effi. (\%)} & \textbf{Cum. Effi. (\%)} \\ \hline
-        2LongTracks              & 36746        & 60000       & 61.24                   & 61.24                              \\ \hline
-        Opposite Charge          & 30375        & 36746       & 82.66                   & 50.62                              \\ \hline
-        MaxRadius $<$ 100 & 29520    & 30375       & 97.19                   & 49.20                              \\ \hline
-        $t\_st1\_r < 100$        & 29498        & 29520       & 99.93                   & 49.16                              \\ \hline
-        $t\_st2\_r < 100$        & 29491        & 29498       & 99.98                   & 49.15                              \\ \hline
-        $t\_st3\_r < 100$        & 29415        & 29491       & 99.74                   & 49.03                              \\ \hline
-        \end{tabular}
-        \caption{Efficiencies and cumulative efficiencies at various selection steps.[CENTOS7]}
-        \label{table:efficiency_updated}
-        \end{table}        
-        \vspace{-0.5cm}
-        \begin{itemize}
-            \item ALMA9 performs better over most of the cuts. 
-            \item Using this fiducial cuts throws out 50\% of the data.
-        \end{itemize}        
+    }
+    \caption{Comparison of efficiency and cumulative efficiency for ALMA9 and CENTOS7.\\Note: The Cutflow is at an Event Level (not track level), thus the conditions have to met by all tracks in the event.}
+    \label{tab:efficiency_comparison}
+\end{table}
+\begin{itemize}
+    \scriptsize
+    \item Highest improvment in goodTrack Cut of $\chi^2$/DoF $<$ 25
+    \item Better ChargeID in ALMA9?
+\end{itemize}
+
 \end{frame}
 
-\begin{frame}{Cuts. Contd.}
+
+\begin{frame}{Fiducial CutFlow}
     \begin{table}[h!]
         \centering
         \small
-        \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Selection Step} & \textbf{Pass} & \textbf{All} & \textbf{Effi. (\%)} & \textbf{Cum. Effi. (\%)} \\ \hline
-        truthd\{0,1\}\_st1\_r $<$ 100    & 59634        & 60000       & 99.39                   & 99.39                              \\ \hline
-        truthd\{0,1\}\_st2\_r $<$ 100   & 58429        & 59634       & 97.98                   & 97.38                              \\ \hline
-        truthd\{0,1\}\_st3\_r $<$ 100   & 56703        & 58429       & 97.05                   & 94.50                              \\ \hline
+        \begin{tabular}{lcccc}
+            \toprule
+            \textbf{Selection Criteria} & \textbf{Pass} & \textbf{All} & \textbf{Eff (\%)} & \textbf{Cum. Eff (\%)} \\
+            \midrule
+            truthd\_st1\_r $<$ 100    & 59228 & 60000 & 98.71  & 98.71 \\
+            truthd\_st2\_r $<$ 100    & 56549 & 59228 & 95.48  & 94.25 \\
+            truthd\_st3\_r $<$ 100    & 52640 & 56549 & 93.09  & 87.73 \\
+            truthd\_pz $>$ 20 GeV       & 50444 & 52640 & 95.83  & 84.07 \\
+            % truthd_P > 20000: pass=50444      all=52640      -- eff=95.83 % cumulative eff=84.07 %
+
+            % truthd\_st1\_r $<$ 95     & 50316 & 52640 & 95.59  & 83.86 \\
+            % truthd\_st2\_r $<$ 95     & 49866 & 50316 & 99.11  & 83.11 \\
+            % truthd\_st3\_r $<$ 95     & 48217 & 49866 & 96.69  & 80.36 \\
+            % truthd\_st1\_r $<$ 90     & 45882 & 48217 & 95.16  & 76.47 \\
+            % truthd\_st2\_r $<$ 90     & 45453 & 45882 & 99.06  & 75.75 \\
+            % truthd\_st3\_r $<$ 90     & 44037 & 45453 & 96.88  & 73.39 \\
+            \bottomrule
         \end{tabular}
+        
         \caption{Efficiencies and cumulative efficiencies for truth-level selection steps. [same for ALMA9/CENTOS7]}
         \label{table:truth_efficiency}
     \end{table}
-        truthd\_st1\_r = \\
-        \hspace{0.5cm}sqrt( pow(truthd0\_x[1],2) + pow(truthd0\_y[1],2) ) $>$ 100 \&\& \\
-        \hspace{0.5cm}sqrt( pow(truthd1\_x[1],2) + pow(truthd1\_y[1],2) )
+    % \begin{lstlisting}
+    %     truthd\_st1\_r = \\
+    %     \hspace{0.5cm}sqrt( pow(truthd0\_x[1],2) + pow(truthd0\_y[1],2) ) $>$ 100 \&\& \\
+    %     \hspace{0.5cm}sqrt( pow(truthd1\_x[1],2) + pow(truthd1\_y[1],2) )
+    % \end{lstlisting}
 \end{frame}
 
-\begin{frame}{Efficiency Definition}
+\begin{frame}{Track Reconstruction Efficiency Defined}
     \begin{itemize}
         \item Remove acceptance based on fiducial cuts at truth level
-        \item Define Efficiency as the fraction of events with more than 2 reconstructed longTracks divided by the total number of events. 
-        \[ \text{Efficiency} = \frac{\text{NEvents}({\geq 2 \text{longTracks}})}{\text{NEvents}({\text{Total}})} \]
+        \item Define Efficiency as the fraction of events with $\geq$2 reconstructed longTracks divided by the total number of events which is same as $\geq$0 longTracks. [Given both are fiducial] 
+        \[ \text{Efficiency} = \frac{\text{NEvents}({\geq 2 \text{longTracks}}\ | \ \text{fiducial})}{\text{NEvents}(\geq0{\text{longTracks}}\ | \ \text{fiducial})} \]
     \end{itemize}
 \end{frame}
 
-\begin{frame}{$>=2$ Track Efficiency as a function of DeltaR0}
+\begin{frame}{$\geq2$ Track Efficiency as a function of DeltaR1}
     \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaR0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{$>=2$ Track Efficiency as a function of DeltaX0 [SKIP]}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaX0.pdf}
-
-    \end{figure}
-\end{frame}
-\begin{frame}{$>=2$ Track Efficiency as a function of DeltaY0 [SKIP]}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaY0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{$>=2$ Track Efficiency as a function of Theta0}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_Theta0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{$>=2$ Track Efficiency as a function of DeltaRP}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaRP.pdf}
+        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaR1.pdf}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Comments on $>$2Track Efficiency}
-    \begin{itemize}
-        \item Good agreement between ALMA9 and CENTOS7
-        \item Minor bump at very low separation ($\approx$ 2-6 mm) for ALMA9 
-        \item Error Bars too significant to say anything about large separation
-    \end{itemize}
-\end{frame}
 
-\begin{frame}{Alternate Efficiency Definition}
-    \begin{itemize}
-        \item Remove acceptance based on fiducial cuts at truth level
-        \item Define Efficiency as the fraction of events with exactly 2 reconstructed longTracks divided by the total number of events. 
-        \[ \text{Efficiency} = \frac{\text{NEvents}({= 2 \text{longTracks}})}{\text{NEvents}({\text{Total}})} \]
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{2 Track Efficiency as a function of DeltaR0}
+\begin{frame}{$\geq2$ Track Efficiency as a function of Theta1}
     \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_eq2_DeltaR0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{2 Track Efficiency as a function of DeltaX0 [SKIP]}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_eq2_DeltaX0.pdf}
-
-    \end{figure}
-\end{frame}
-\begin{frame}{2 Track Efficiency as a function of DeltaY0 [SKIP]}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_eq2_DeltaY0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{2 Track Efficiency as a function of Theta0}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_eq2_Theta0.pdf}
-    \end{figure}
-\end{frame}
-\begin{frame}{2 Track Efficiency as a function of DeltaRP}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_eq2_DeltaRP.pdf}
+        \includegraphics[width=\linewidth]{./output/Effi_greq2_Theta1.pdf}
     \end{figure}
 \end{frame}
 
-\begin{frame}{A More Robust Efficiency Metric [MC Based]}
-    \begin{itemize}
-        \item Our interest is only in the primary two tracks from $e^+e^-$
-        \item For acceptance: Truth Position of $e^+e^-$ $<$ 100
-        \item \text{\color{red}{\textbf{Identify the two primary tracks}} }
-        \begin{itemize}
-            \item Wanted to use t\_pdg\_parent \ldots
-            \item Find closest to truth (by position and momenta)\dots 
-            \item not trivial what is the margin of allowed error?
-            \item Highest momenta tracks?
-            \item Best approach is to use t\_truthHitRatio + PID
-        \end{itemize}
-        \item Can further quantify the ``goodness'' of the reconstructed primary tracks
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Distribution of t\_pdg\_parent}
-    \begin{table}[h!]
-        \centering
-        \small
-        \begin{tabular}{|c|c|c|}
-        \hline
-        t\_pdg\_parent  & AL9       & SL7       \\ \hline
-        -11             & 2         & 0         \\
-        0               & 2         & 0         \\
-        22              & 2610      & 2397      \\
-        32              & 115877    & 112809    \\ \hline
-        \end{tabular}
-        \caption{Count of t\_pdg\_parent}
-        \label{table:truth_efficiency}
-        All particles are daughters of the Dark Photon? 
-    \end{table}
-    
-\end{frame}
-
-\section{Dark Photon CutFlow from Ansh's Study [SKIP]}
-% \begin{frame}
-    \includepdf[pages={3-5}]{assets/Alma9vsCentos7Efficiencies.pdf}
+% \begin{frame}{$\geq2$ Track Efficiency as a function of DeltaRP}
+%     \begin{figure}
+%         \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaRP.pdf}
+%     \end{figure}
 % \end{frame}
 
-\begin{frame}{Comments on Data in NTuples [SKIP]}
+\begin{frame}{Efficiencies as a Function of Separation @ Station 1}
+    \begin{columns}
+        \begin{column}{0.6\linewidth}
+            \begin{figure}
+                \includegraphics[width=1\linewidth]{./output/Effi_greq2_DeltaR0.pdf}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.6\linewidth}
+            \begin{figure}
+                \includegraphics[width=1\linewidth]{./output/Effi_greq2_Theta0.pdf}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Comments on $\geq$2 Track Efficiency}
     \begin{itemize}
-        \item Need to add newly introducted variables to twiki.
-        \item t\_st0\_x, y, z are filled with NaNs, We donot use/store station0 vals?
-        \item t\_pdg\_parent ???
-        \item truthParticleMatchedTracks - What exactly is this column.?
+        \item Good agreement between ALMA9 and CENTOS7
+        \item Low statistics at large separation
+        \item The reconstruction is independent of momentum-separation (DeltaRP)
+        \item Efficiencies at Station1 are confusing?
+
     \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Efficiency Metric based on Reconstructed Truth}
+    We are interested only in the two primary tracks from $e^+e^-$. Thus we can use the reconstructed truth variables to check if the underlying truth particles are reconstructed.
+    \begin{itemize}
+        \item For acceptance: Truth Position of $e^+e^-$ $<$ 100
+        \item \text{{\textbf{Identify the two primary tracks}} }
+        \begin{itemize}
+            \item t\_barcode = 2,3 $\implies$ primary tracks 
+            \item Also require t\_barcode\_parent = 1 $\implies$ from DarkPhoton
+            % \item \lstinline| Any(t_barcode == 2) && Any(t_barcode == 3) && (Sum(t_barcode_parent == 1) >= 2) |
+
+        \end{itemize}
+        \item TLDR; Ran the analysis with the above definition, but the results are the exact same as $\geq$ 2 case 
+        \item So if event reconstructed has more than 2 longTracks, the two primary tracks are reconstructed, according to above definition.
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Efficiency Metric based on Reconstructed Truth}
+    \begin{figure}
+        \includegraphics[width=\linewidth]{output/NEffi_MC_pass_DeltaR1.pdf}
+        \caption{Efficiency defined using reconstructed truth variables is same as the $\geq$ 2 longTracks definition}
+    \end{figure}
     
 \end{frame}
+
+\begin{frame}{Conclusions}
+    \begin{itemize}
+        \item The ``efficiencies'' generally agrees between ALMA9 and CENTOS7
+        \item Need a better metric for efficiency accounting for track quality parameter like Track Chi2
+        \item Possible duplications in tracks 
+        \item The efficiencies at Station 1 are confusing, needs to be better understood
+    \end{itemize}
+\end{frame}
+
+    
