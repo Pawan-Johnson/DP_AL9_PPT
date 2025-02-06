@@ -5,6 +5,43 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Previous Efficiency Studies : A' Tracking CutFlow}
+    \begin{table}[h]
+        \centering
+        \resizebox{\linewidth}{!}{ 
+            \begin{tabular}{lccccccccc}
+                \toprule
+                \multirow{2}{*}{Selection} & \multicolumn{4}{c}{ALMA9} & \multicolumn{4}{c}{CENTOS7} & \multirow{2}{*}{$\Delta$Eff.} \\
+                \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+                & Pass & All & Eff. & Cum. Eff.
+                & Pass & All & Eff. & Cum. Eff. \\
+                \midrule
+                $\geq$1 LongTracks & 56989 & 60000 & 94.98 & 94.98  & 56002 & 60000 & 93.34 & 93.34 & 1.64 \\
+                $\geq$2 LongTracks & 46416 & 56989 & 81.45 & 77.36  & 45210 & 56002 & 80.73 & 75.35 & 0.72 \\
+                 =2 LongTracks & 37807 & 46416 & 81.45 & 63.01  & 36746 & 45210 & 81.28 & 61.24 & 0.17 \\
+                 \textcolor{red}{\textbf{Opposite Charge}} & 32427 & 37807 & 85.77 & 54.04  & 30375 & 36746 & 82.66 & 50.62 & \textcolor{red}{\textbf{3.11}}\\
+                MaxRadius $<$ 100 & 31489 & 32427 & 97.11 & 52.48  & 29520 & 30375 & 97.19 & 49.20 & -0.08 \\
+                \midrule
+                \multicolumn{10}{c}{goodTrack Cuts}\\
+                \midrule
+                $\geq$ 7 Layers & 31435 & 31489 & 99.83  & 52.39  & 29472 & 29520 & 99.84  & 49.12 & -0.01 \\
+                \textcolor{red}{\textbf{$\chi^2$/DoF $<$ 25}} & 31121 & 31435 & 99.00  & 51.87  & 27710 & 29472 & 94.02  & 46.18& \textcolor{red}{\textbf{4.98}} \\
+                $\geq$ 7 DoF & 31115 & 31121 & 99.98  & 51.86    & 27706 & 27710 & 99.99  & 46.18 & -0.01\\
+                \bottomrule
+            \end{tabular}
+        }
+        \caption{Comparison of efficiency and cumulative efficiency for ALMA9 and CENTOS7.\\Note: The Cutflow is at an Event Level (not track level), thus the conditions have to met by all tracks in the event.}
+        \label{tab:efficiency_comparison}
+    \end{table}
+    \begin{itemize}
+        \scriptsize
+        \item Highest improvement in goodTrack Cut of $\chi^2$/DoF $<$ 25
+        \item Better ChargeID in ALMA9?
+        \item We want to take a look at it differentially
+    \end{itemize}
+    
+    \end{frame}
+
 
 \begin{frame}{Definition of Efficiency}
     \textbf{General Idea}
@@ -51,42 +88,6 @@
 
             % The p\_z cut is to ensure the particles don't stray too far from the LOS?
         }
-\end{frame}
-
-\begin{frame}{DarkPhoton Tracking CutFlow}
-\begin{table}[h]
-    \centering
-    \resizebox{\linewidth}{!}{ 
-        \begin{tabular}{lccccccccc}
-            \toprule
-            \multirow{2}{*}{Selection} & \multicolumn{4}{c}{ALMA9} & \multicolumn{4}{c}{CENTOS7} & \multirow{2}{*}{$\Delta$Eff.} \\
-            \cmidrule(lr){2-5} \cmidrule(lr){6-9}
-            & Pass & All & Eff. & Cum. Eff.
-            & Pass & All & Eff. & Cum. Eff. \\
-            \midrule
-            $\geq$1 LongTracks & 56989 & 60000 & 94.98 & 94.98  & 56002 & 60000 & 93.34 & 93.34 & 1.64 \\
-            $\geq$2 LongTracks & 46416 & 56989 & 81.45 & 77.36  & 45210 & 56002 & 80.73 & 75.35 & 0.72 \\
-             =2 LongTracks & 37807 & 46416 & 81.45 & 63.01  & 36746 & 45210 & 81.28 & 61.24 & 0.17 \\
-             \textcolor{red}{\textbf{Opposite Charge}} & 32427 & 37807 & 85.77 & 54.04  & 30375 & 36746 & 82.66 & 50.62 & \textcolor{red}{\textbf{3.11}}\\
-            MaxRadius $<$ 100 & 31489 & 32427 & 97.11 & 52.48  & 29520 & 30375 & 97.19 & 49.20 & -0.08 \\
-            \midrule
-            \multicolumn{10}{c}{goodTrack Cuts}\\
-            \midrule
-            $\geq$ 7 Layers & 31435 & 31489 & 99.83  & 52.39  & 29472 & 29520 & 99.84  & 49.12 & -0.01 \\
-            \textcolor{red}{\textbf{$\chi^2$/DoF $<$ 25}} & 31121 & 31435 & 99.00  & 51.87  & 27710 & 29472 & 94.02  & 46.18& \textcolor{red}{\textbf{4.98}} \\
-            $\geq$ 7 DoF & 31115 & 31121 & 99.98  & 51.86    & 27706 & 27710 & 99.99  & 46.18 & -0.01\\
-            \bottomrule
-        \end{tabular}
-    }
-    \caption{Comparison of efficiency and cumulative efficiency for ALMA9 and CENTOS7.\\Note: The Cutflow is at an Event Level (not track level), thus the conditions have to met by all tracks in the event.}
-    \label{tab:efficiency_comparison}
-\end{table}
-\begin{itemize}
-    \scriptsize
-    \item Highest improvment in goodTrack Cut of $\chi^2$/DoF $<$ 25
-    \item Better ChargeID in ALMA9?
-\end{itemize}
-
 \end{frame}
 
 
