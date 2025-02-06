@@ -43,21 +43,21 @@
     \end{frame}
 
 
-\begin{frame}{Definition of Efficiency}
-    \textbf{General Idea}
-	\begin{itemize}
+% \begin{frame}{Definition of Efficiency}
+%     \textbf{General Idea}
+% 	\begin{itemize}
 
-        \item One Track $\implies$ NOT reconstructed
-        \item Two Tracks with opposite charges $\implies$ Reconstructed 
-        \item More than two track $\implies$ Complicated
-    \end{itemize}
-    \vspace{1 cm}
-    \textbf{Potential Efficiency Metrics}
-    \begin{itemize}
-        \item Number of Events with $\geq$ 2 longTracks [good proxy]
-        \item MC Based Effi. [Using reconstructed-truth level data]
-    \end{itemize}
-\end{frame}
+%         \item One Track $\implies$ NOT reconstructed
+%         \item Two Tracks with opposite charges $\implies$ Reconstructed 
+%         \item More than two track $\implies$ Complicated
+%     \end{itemize}
+%     \vspace{1 cm}
+%     \textbf{Potential Efficiency Metrics}
+%     \begin{itemize}
+%         \item Number of Events with $\geq$ 2 longTracks [good proxy]
+%         \item MC Based Effi. [Using reconstructed-truth level data]
+%     \end{itemize}
+% \end{frame}
 
 \begin{frame}{Definition of Fiducial}
     Before we define the efficiency we must account for the detector acceptance by ensuring the particle to be Fiducial.
@@ -134,15 +134,33 @@
 
 \begin{frame}{$\geq2$ Track Efficiency as a function of DeltaR1}
     \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_DeltaR1.pdf}
+        \includegraphics[width=0.7\linewidth]{./output/Effi_greq2_DeltaR1.pdf}
     \end{figure}
+    \begin{itemize}
+        \item There is generally agreement between ALMA9 and CENTOS7
+        \item Although characteristics is different from the overlay study
+        \begin{itemize}
+            \item Overlay shows a more gradual growth to 90\% efficiency
+        \end{itemize}
+    \end{itemize}
 \end{frame}
 
+\begin{frame}{$\geq2$ Track Efficiency as a function of DeltaR1}
+    \begin{figure}
+        \includegraphics[width=0.8\linewidth]{./output/Effi_greq2_DeltaR1_unzoom.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item The Efficiency seem to decay at higher separation!
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{$\geq2$ Track Efficiency as a function of Theta1}
     \begin{figure}
-        \includegraphics[width=\linewidth]{./output/Effi_greq2_Theta1.pdf}
+        \includegraphics[width=0.8\linewidth]{./output/Effi_greq2_Theta1.pdf}
     \end{figure}
+    \begin{itemize}
+        \item The decay of efficiency at large separation is existent here as well.
+    \end{itemize}
 \end{frame}
 
 % \begin{frame}{$\geq2$ Track Efficiency as a function of DeltaRP}
@@ -155,7 +173,7 @@
     \begin{columns}
         \begin{column}{0.6\linewidth}
             \begin{figure}
-                \includegraphics[width=1\linewidth]{./output/Effi_greq2_DeltaR0.pdf}
+                \includegraphics[width=1\linewidth]{./output/Effi_greq2_DeltaR0_unzoom.pdf}
             \end{figure}
         \end{column}
         \begin{column}{0.6\linewidth}
@@ -164,17 +182,20 @@
             \end{figure}
         \end{column}
     \end{columns}
-\end{frame}
-
-\begin{frame}{Comments on $\geq$2 Track Efficiency}
     \begin{itemize}
-        \item Good agreement between ALMA9 and CENTOS7
-        \item Low statistics at large separation
-        \item The reconstruction is independent of momentum-separation (DeltaRP)
-        \item Efficiencies at Station1 are confusing?
-
+        \item The efficiencies at Station 1 seem constant throughout!
+        \item Inconsistent with decay observed from Station 3.
     \end{itemize}
 \end{frame}
+
+% \begin{frame}{Comments on $\geq$2 Track Efficiency}
+%     \begin{itemize}
+%         \item Good agreement between ALMA9 and CENTOS7
+%         \item Low statistics at large separation
+%         \item The reconstruction is independent of momentum-separation (DeltaRP)
+%         \item Efficiencies at Station1 are confusing?
+%     \end{itemize}
+% \end{frame}
 
 
 
@@ -198,7 +219,7 @@
 
 \begin{frame}{Efficiency Metric based on Reconstructed Truth}
     \begin{figure}
-        \includegraphics[width=\linewidth]{output/NEffi_MC_pass_DeltaR1.pdf}
+        \includegraphics[width=0.9\linewidth]{output/NEffi_MC_pass_DeltaR1.pdf}
         \caption{Efficiency defined using reconstructed truth variables is same as the $\geq$ 2 longTracks definition}
     \end{figure}
     
@@ -206,10 +227,16 @@
 
 \begin{frame}{Conclusions}
     \begin{itemize}
+        \small
         \item The ``efficiencies'' generally agrees between ALMA9 and CENTOS7
-        \item Need a better metric for efficiency accounting for track quality parameter like Track Chi2
-        \item Possible duplications in tracks 
-        \item The efficiencies at Station 1 are confusing, needs to be better understood
+        \item Lack of agreement with the overlay study
+        \item Interpretation of efficiency decay at Station 3 is unclear
+        % \item Efficiency at Station 1 is constant, which is inconsistent with Station 3
+        \item The resolution of track reconstruction (Track $\chi^2$) has improved.
+        \begin{itemize}
+            \item Can try to quantify the above in ``efficiency''
+        \end{itemize}
+        % \item Some differences in ChargeID efficiency
     \end{itemize}
 \end{frame}
 
