@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.1.6)  7 FEB 2025 08:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.1.6)  7 FEB 2025 10:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1112,14 +1112,14 @@ Overfull \hbox (4.55623pt too wide) detected at line 190
  <./output/Effi_greq2_DeltaR0_unzoom.pdf, page is rotated 90 degrees> <./output/Effi_greq2_Theta0.pdf, page is rotated 90 degrees>] [26
 
 ]
-<output/NEffi_MC_pass_DeltaR1.pdf, id=950, 569.12625pt x 408.52625pt>
-File: output/NEffi_MC_pass_DeltaR1.pdf Graphic file (type pdf)
-<use output/NEffi_MC_pass_DeltaR1.pdf>
-Package pdftex.def Info: output/NEffi_MC_pass_DeltaR1.pdf  used on input line 227.
+<output/Effi_MC_pass_DeltaR1_unzoom.pdf, id=950, 569.12625pt x 408.52625pt>
+File: output/Effi_MC_pass_DeltaR1_unzoom.pdf Graphic file (type pdf)
+<use output/Effi_MC_pass_DeltaR1_unzoom.pdf>
+Package pdftex.def Info: output/Effi_MC_pass_DeltaR1_unzoom.pdf  used on input line 227.
 (pdftex.def)             Requested size: 276.559pt x 198.52771pt.
  [27
 
- <./output/NEffi_MC_pass_DeltaR1.pdf, page is rotated 90 degrees>] [28
+ <./output/Effi_MC_pass_DeltaR1_unzoom.pdf, page is rotated 90 degrees>] [28
 
 ])
 
@@ -1148,14 +1148,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30608 strings out of 476034
- 613424 string characters out of 5792865
+ 613466 string characters out of 5792865
  1873388 words of memory out of 6000000
  50330 multiletter control sequences out of 15000+600000
  528213 words of font info for 89 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  128i,18n,122p,465b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on build/main.pdf (28 pages, 615981 bytes).
+Output written on build/main.pdf (28 pages, 606863 bytes).
 PDF statistics:
  1085 PDF objects out of 1200 (max. 8388607)
  541 compressed objects within 6 object streams

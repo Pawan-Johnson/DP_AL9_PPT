@@ -1836,11 +1836,11 @@ INPUT ./output/Effi_greq2_Theta0.pdf
 INPUT ./output/Effi_greq2_Theta0.pdf
 INPUT ./output/Effi_greq2_Theta0.pdf
 INPUT ./output/Effi_greq2_Theta0.pdf
-INPUT ./output/NEffi_MC_pass_DeltaR1.pdf
-INPUT ./output/NEffi_MC_pass_DeltaR1.pdf
-INPUT output/NEffi_MC_pass_DeltaR1.pdf
-INPUT ./output/NEffi_MC_pass_DeltaR1.pdf
-INPUT ./output/NEffi_MC_pass_DeltaR1.pdf
+INPUT ./output/Effi_MC_pass_DeltaR1_unzoom.pdf
+INPUT ./output/Effi_MC_pass_DeltaR1_unzoom.pdf
+INPUT output/Effi_MC_pass_DeltaR1_unzoom.pdf
+INPUT ./output/Effi_MC_pass_DeltaR1_unzoom.pdf
+INPUT ./output/Effi_MC_pass_DeltaR1_unzoom.pdf
 INPUT build/main.sfr
 INPUT build/main.sfr
 INPUT build/main.sfr

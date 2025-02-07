@@ -13,8 +13,8 @@
 	\begin{itemize}
 		\scriptsize
 		\item Particle predominantly separated in the y-direction due to magnetic field
-		\item DeltaX looks symmetric but separation here is much lower.[DeltaR $\approx$ DeltaR]
-		\item DeltaRP has a relatively ``flat'' distribution and is not a good separation to quantify reconstruction
+		\item DeltaX looks symmetric but separation here is much lower.[DeltaR $\approx$ DeltaY]
+		\item DeltaRP[=ROOT::Math::VectorUtil::DeltaR(d0\_momenta, d1\_momenta)] has a relatively ``flat'' distribution and is not a good separation metric
 		\item We shall use DeltaR and Theta as the primary separation variables
 	\end{itemize}
 \end{frame}
@@ -58,7 +58,7 @@
 		\small
 		\item Separation variables are calculated using MC-truth data.
 		\item This ensures consistency across both ALMA9 and CENTOS7.
-		\item The separation varaiabes used are :
+		\item The separation variables used are :
 		\begin{itemize}
 			\scriptsize
 			\item truthd0\_x, truthd0\_y, truthd1\_x, truthd1\_y, truthd0\_z, truthd1\_z
@@ -127,7 +127,7 @@
 	\vspace{0.5cm}
 	\begin{itemize}
 		\scriptsize
-		\item NEvents decay with increasing separation as expected
+		\item NEvents decreases with increasing separation as expected
 		\item Separations increase at the last tracking station due to the magnetic field
 		\item Large separations at Station1 [$>$30 mm] aren't reconstructed at Station3
 	\end{itemize}
